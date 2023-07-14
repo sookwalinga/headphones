@@ -16,18 +16,18 @@ body {
   align-items: baseline;
 }
 
-.Nav-Bar {
+.nav-bar {
   display: flex;
   list-style: none;
   gap: 20px;
   text-decoration: none;
   color: white;
 }
-.Nav-Bar a {
+.nav-bar a {
   text-decoration: none;
   color: white;
 }
-.Nav-Bar :hover {
+.nav-bar :hover {
   color: #ff6565;
 }
 .w-6 {
@@ -40,7 +40,7 @@ body {
   .small-screen {
     display: block;
   }
-  .Nav-Bar {
+  .nav-bar {
     display: none;
   }
   .header {
@@ -78,7 +78,6 @@ main .second-section {
   flex-direction: column;
   align-items: center;
 }
-
 #main-header {
   color: white;
   flex-direction: column;
