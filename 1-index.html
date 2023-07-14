@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="0-styles.css" />
+        <link rel="stylesheet" type="text/css" href="1-styles.css" />
         <title>Headphones</title>
         <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
         <style>
@@ -106,6 +106,15 @@
                     justify-self: center;
                 }
 
+                .main-header .second-section .second-div {
+                    display: flex;
+                    flex-direction: column;
+                    flex-flow: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 50px;
+                    height: auto;
+                }
 
 
 
@@ -127,6 +136,50 @@
                 flex-direction: column;
             }
 
+            main .second-section {
+                height: 800px;
+                display: flex;
+                color: black;
+                justify-content: flex-start;
+                position: relative;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            main .second-section .second-div .sec-section {
+                display: flex;
+                flex-direction: column;
+            }
+
+            main .second-section .second-div {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 100px;
+            }
+
+            main .second-section .second-div img,
+            h3,
+            p {
+                display: flex;
+                justify-content: center;
+            }
+
+            main .second-section .second-div img {
+                display: flex;
+                width: 80px;
+                height: 65px;
+                justify-content: center;
+                padding-left: 50px;
+            }
+
+            main .second-section h1,
+            p {
+                display: flex;
+                justify-content: center;
+            }
 
 
 
@@ -209,7 +262,46 @@
                     <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 </div>
             </section>
+            <section class="second-section">
+                <div>
+                    <h1> What we do..</h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectur adipiscing elit,sed do eiusmod tempor incididunt ut</p>
+                    <p>labore et dolore magna aliqua. Ut enim ad minim veinam,quis nostrud erercitation ullamco</p>
+                    <p>laboris nisi ut aliquip ex ea comondo consequat. Duis aute irure dolor in reprehenderit in</p>
+                    <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="second-div">
+                    <section class="sec-section">
+                        <img src="assets/sound-frecuency.png" alt="img1">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet,</p>
+                        <p>consectur adipiscing elit.</p>
+                    </section>
+                    <section class="sec-section">
+                        <img src="assets/video.png" alt="img1">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet,</p>
+                        <p>consectur adipiscing elit.</p>
+                    </section>
+                    <section class="sec-section">
+                        <img src="assets/music.png" alt="img1">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet,</p>
+                        <p>consectur adipiscing elit.</p>
+                    </section>
+                    <section class="sec-section">
+                        <img src="assets/hearing.png" alt="img1">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet,</p>
+                        <p>consectur adipiscing elit.</p>
+                    </section>
+                </div>
 
+            </section>
 
 
 

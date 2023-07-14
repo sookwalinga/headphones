@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="4-styles.css"/>
+    <title>Headphones</title>
+    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+    <style>
+        body
+        
+        {
+             padding: 0;
+             margin: 0;
+             font-family: 'Source Sans Pro' ;
+         }
+         .header{
+             display:flex;
+             justify-content: space-between;
+             background-color:transparent;
+             color: white;
+             padding-top: 41px;
+             padding-left: 213px;
+             padding-right: 213px;
+             z-index: 1000;
+             position: relative;
+             align-items: baseline;
+             
+         }
+         .Final-footer
+         {
+             display: flex;
+             background-color: #071629;
+             height: 249px;
+             justify-content: space-between;
+             align-items: center;
+             padding-left: 180px;
+             padding-right: 280px;
+             flex-direction: row;
+         }
+         .Final-footer .Social
+         {
+             display: flex;
+             
+             gap: 40px;
+             height: 30px;
+             width: 30px;
+             
+         }
+        
+ 
+         .Nav-Bar {
+             display:flex;
+             list-style: none;
+             gap: 20px; 
+             text-decoration: none;
+             color: white;
+         
+         
+         }
+         .Nav-Bar a 
+         {
+             text-decoration: none;
+             color:white;
+         }
+         .Nav-Bar :hover
+         {
+             color: #FF6565;
+         }
+         .w-6
+         {
+             width: 50px;
+         }
+         .small-screen
+         {
+             display: none;
+         }
+         @media screen and (max-width:780px){
+             .small-screen{
+                 display:block;
+                 
+                 
+                 
+             }
+             .Nav-Bar{
+                 display: none;
+             }
+             .header
+             {
+                 display: flex;
+                 justify-content: space-between;
+                 background-color: transparent;
+                 color: white;
+                 padding-left: 15px;    
+                 align-items: baseline;    
+                   
+         
+         
+         
+             }
+             .logo
+             {
+                 display: flex;
+                 justify-self: center;
+             }
+             .main-header .second-section .second-div
+             {
+             display: flex;
+             flex-direction: column;
+             flex-flow: column;
+             justify-content: space-between;
+             align-items: center;
+             gap: 50px;
+             height: auto;
+             }
+             .main-header .third-section .third-div
+         {
+             display: flex;
+             flex-direction: column;
+             justify-content: space-around;
+             
+         }
+             
+             
+             
+             
+         }
+         main .first-section
+         {
+             height: 1000px;
+             background-image: url(assets/headphones_hero_1.jpg);
+             background-repeat: no-repeat;
+             background-position: center;
+             background-size: cover;
+             position: relative;
+             top: -110px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column;
+         }
+         main .second-section 
+         {   height: 800px;
+             display: flex;
+             color: black;
+             justify-content: flex-start;
+             position:relative;
+             flex-direction: column;
+             align-items: center;
+             
+         }
+         main .second-section .second-div .sec-section
+         {
+             display:flex;
+             flex-direction: column;
+         }
+         main .second-section .second-div
+         {
+             display: flex;
+             flex-direction: row;
+             justify-content: space-between;
+             align-items: center;
+             gap: 100px;
+         }
+         main .second-section .second-div img,h3,p
+         {
+             display: flex;
+             justify-content: center;
+         }
+         main .second-section .second-div img
+         {   display: flex;
+             width: 80px;
+             height: 65px;
+             justify-content: center;
+             padding-left: 50px;
+         }
+         main .second-section h1,p
+         {
+             display: flex;
+             justify-content: center;
+         }
+         main .third-section
+         {
+             height: 800px;
+             background-image: url(assets/headphones_hero_2.jpg);
+             background-size: cover;
+             background-repeat: no-repeat;
+             display:flex;
+             color: white;
+             position: relative;
+             justify-content: center;
+         }
+         .main-header .third-section h1,p
+         {
+             display: flex;
+             justify-content: center;
+         }
+         .main-header .third-section
+         {
+             display: flex;
+             flex-direction: column;
+         }
+         .main-header .third-section .third-div
+         {
+             display: flex;
+             flex-direction: row;
+             justify-content: space-around;
+             
+         }
+         .main-header .third-section .third-div .rd-section 
+         {
+             display: flex;
+             flex-direction: column;
+             justify-content: space-around;
+             height: 190px;
+             width: 190px;
+             background-image: url(assets/PolygonCopy.png);
+             background-repeat: no-repeat;
+             
+             
+             
+         }
+         .main-header .third-section .third-div .rd-section h1,p
+         {
+             display:flex;
+             flex-direction: column;
+             align-items: center;
+         }
+         .main-header .third-section .third-div .rd-section h1
+         {
+             font-size: 45px;
+             margin-bottom: 10px;
+         }
+         
+         .main-header .forth-section h1
+         {
+             font-size: 50px;
+         }
+         .main-header .forth-section
+         {
+             height: 800px;
+             display: flex;
+             justify-content: center;
+             align-content: center;
+             color: black;padding-top: 200px;
+         }
+         .main-header .forth-section .button
+         {
+             background-color:#FF6565;
+             width: 162px;
+             height: 44px;
+             border: none;
+             border-radius: 20px;
+             color: white;
+             justify-content: center;
+            
+ 
+         }
+         
+         #main-header
+         {
+             color: white;
+             flex-direction: column;
+             
+ 
+ 
+         }
+         main .first-section .button
+         {
+             background-color:#FF6565;
+             width: 162px;
+             height: 44px;
+             border: none;
+             border-radius: 20px;
+             color: white;
+ 
+         }
+         main .first-section .first-para
+         {
+             display: flex;
+             flex-direction: column;
+             justify-self: flex-end;
+             align-self: center;
+         }
+  
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div class="header">
+            <div class="small-screen">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+                  </svg>
+                  
+            </div>
+            <div class="logo">
+            
+                
+            
+            <img src="assets/logo_headphones.png" alt="logo_headphones">
+                
+             
+        </div>
+            <nav class ="Nav-Bar" >
+                
+                    <a href ="#">What we do</a>
+                    <a href ="#">our results</a>
+                    <a href ="#">contact us</a>
+                
+            </nav>
+            <!--Hamburger-->
+            
+        </div>
+    </header>
+    <main id="main-header" class ="main-header">
+        <section class="first-section">
+       <br><br><br><br><br><br><br><br>
+            <h1 > Lorem ipsum dolor set amet lorem ipsum </h1>
+        <div>
+        Lorem ipsum dolor set amet lorem ipsum dolor set
+        </div>
+        <br>
+        <br>
+        <button type="button" class="button">
+            CALL TO ACTION
+        </button>
+        <br><br><br><br><br><br><br><br>
+        <div class="first-para">
+                <p>Lorem ipsum dolor sit amet, consectur adipiscing elit,sed do eiusmod tempor incididunt ut</p>
+                <p>labore et dolore magna aliqua. Ut enim ad minim veinam,quis nostrud erercitation ullamco</p>
+                <p>laboris nisi ut aliquip ex ea comondo consequat. Duis aute irure dolor in reprehenderit in</p>
+                <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+        </section>
+        <section class="second-section">
+            <div>
+                <h1> What we do..</h1>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectur adipiscing elit,sed do eiusmod tempor incididunt ut</p>
+                <p>labore et dolore magna aliqua. Ut enim ad minim veinam,quis nostrud erercitation ullamco</p>
+                <p>laboris nisi ut aliquip ex ea comondo consequat. Duis aute irure dolor in reprehenderit in</p>
+                <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="second-div">
+                <section class="sec-section">
+                    <img src="assets/sound-frecuency.png" alt="img1">
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet,</p>
+                    <p>consectur adipiscing elit.</p>
+                </section>
+                <section class="sec-section">
+                    <img src="assets/video.png" alt="img1">
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet,</p>
+                    <p>consectur adipiscing elit.</p>
+                </section>
+                <section class="sec-section">
+                    <img src="assets/music.png" alt="img1">
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet,</p>
+                    <p>consectur adipiscing elit.</p>
+                </section>
+                <section class="sec-section">
+                    <img src="assets/hearing.png" alt="img1">
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet,</p>
+                    <p>consectur adipiscing elit.</p>
+                </section>
+            </div>
+            
+        </section>
+       
+        <section class="third-section">
+            <div>
+                
+                <h1>Our results speak for themselves</h1>
+                <br>
+                
+                <p>Lorem ipsum dolor sit amet, consectur adipiscing elit,sed do eiusmod tempor incididunt ut</p>
+                <p>labore et dolore magna aliqua. Ut enim ad minim veinam,quis nostrud erercitation ullamco</p>
+                <p>laboris nisi ut aliquip ex ea comondo consequat. Duis aute irure dolor in reprehenderit in</p>
+                <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <br> <br> <br>
+            </div>
+            <div class="third-div">
+                <div class="rd-section">
+                    <h1>+2%</h1>
+                   <p>Lorem ipsum dolor</p>
+                    
+                </div>
+                <div class="rd-section">
+                    <h1>+2%</h1>
+                   <p>Lorem ipsum dolor</p>
+                </div>
+                   
+                <div class="rd-section">
+                    <h1>+2%</h1>
+                   <p>Lorem ipsum dolor</p>
+                    
+                </div>
+                <div class="rd-section">
+                   <h1>+2%</h1>
+                   <p>Lorem ipsum dolor</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="forth-section">
+            <div>
+                <h1>Contact us</h1>
+                <br><br><br><br><br><br>
+            <p>Name</p>
+            <br><br>
+            <p>Email</p>
+            <br><br>
+            <p>Your messege</p>
+                <br><br><br><br><br>
+            <Button type="button" class="button">
+          CALL TO ACTION
+            </Button>
+            </div>
+
+
+        </section>
+    </main>
+    <footer>
+        <div class="Final-footer">
+        
+            <div class="logo">
+            
+                
+            
+                <img src="assets/logo_headphones.png" alt="logo_headphones">
+            </div>
+            <nav class="Social">
+                <img src="assets/Facebook_White.png" alt="facebook">
+                <img src="assets/Twitter_White.png" alt="twitter">
+                <img src="assets/Instagram_White.png" alt="Instagram">
+                 
+
+            </nav>
+        
+           
+       
+        </div>
+        
+
+        
+    </footer>
+    
+</body>
+</html>

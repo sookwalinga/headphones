@@ -55,6 +55,15 @@ body {
     display: flex;
     justify-self: center;
   }
+  .main-header .second-section .second-div {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    height: auto;
+  }
 }
 main .first-section {
   height: 1000px;
@@ -77,6 +86,35 @@ main .second-section {
   position: relative;
   flex-direction: column;
   align-items: center;
+}
+main .second-section .second-div .sec-section {
+  display: flex;
+  flex-direction: column;
+}
+main .second-section .second-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+main .second-section .second-div img,
+h3,
+p {
+  display: flex;
+  justify-content: center;
+}
+main .second-section .second-div img {
+  display: flex;
+  width: 80px;
+  height: 65px;
+  justify-content: center;
+  padding-left: 50px;
+}
+main .second-section h1,
+p {
+  display: flex;
+  justify-content: center;
 }
 
 #main-header {

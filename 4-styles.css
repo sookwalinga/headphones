@@ -1,0 +1,276 @@
+body
+        
+       {
+            padding: 0;
+            margin: 0;
+            font-family: 'Source Sans Pro' ;
+        }
+        .header{
+            display:flex;
+            justify-content: space-between;
+            background-color:transparent;
+            color: white;
+            padding-top: 41px;
+            padding-left: 213px;
+            padding-right: 213px;
+            z-index: 1000;
+            position: relative;
+            align-items: baseline;
+            
+        }
+        .Final-footer
+        {
+            display: flex;
+            background-color: #071629;
+            height: 249px;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 180px;
+            padding-right: 280px;
+            flex-direction: row;
+        }
+        .Final-footer .Social
+        {
+            display: flex;
+            
+            gap: 40px;
+            height: 30px;
+            width: 30px;
+            
+        }
+       
+
+        .Nav-Bar {
+            display:flex;
+            list-style: none;
+            gap: 20px; 
+            text-decoration: none;
+            color: white;
+        
+        
+        }
+        .Nav-Bar a 
+        {
+            text-decoration: none;
+            color:white;
+        }
+        .Nav-Bar :hover
+        {
+            color: #FF6565;
+        }
+        .w-6
+        {
+            width: 50px;
+        }
+        .small-screen
+        {
+            display: none;
+        }
+        @media screen and (max-width:780px){
+            .small-screen{
+                display:block;
+                
+                
+                
+            }
+            .Nav-Bar{
+                display: none;
+            }
+            .header
+            {
+                display: flex;
+                justify-content: space-between;
+                background-color: transparent;
+                color: white;
+                padding-left: 15px;    
+                align-items: baseline;    
+                  
+        
+        
+        
+            }
+            .logo
+            {
+                display: flex;
+                justify-self: center;
+            }
+            .main-header .second-section .second-div
+            {
+            display: flex;
+            flex-direction: column;
+            flex-flow: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+            height: auto;
+            }
+            .main-header .third-section .third-div
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+        }
+            
+            
+            
+            
+        }
+        main .first-section
+        {
+            height: 1000px;
+            background-image: url(assets/headphones_hero_1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            top: -110px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        main .second-section 
+        {   height: 800px;
+            display: flex;
+            color: black;
+            justify-content: flex-start;
+            position:relative;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        main .second-section .second-div .sec-section
+        {
+            display:flex;
+            flex-direction: column;
+        }
+        main .second-section .second-div
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 100px;
+        }
+        main .second-section .second-div img,h3,p
+        {
+            display: flex;
+            justify-content: center;
+        }
+        main .second-section .second-div img
+        {   display: flex;
+            width: 80px;
+            height: 65px;
+            justify-content: center;
+            padding-left: 50px;
+        }
+        main .second-section h1,p
+        {
+            display: flex;
+            justify-content: center;
+        }
+        main .third-section
+        {
+            height: 800px;
+            background-image: url(assets/headphones_hero_2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display:flex;
+            color: white;
+            position: relative;
+            justify-content: center;
+        }
+        .main-header .third-section h1,p
+        {
+            display: flex;
+            justify-content: center;
+        }
+        .main-header .third-section
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        .main-header .third-section .third-div
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+        }
+        .main-header .third-section .third-div .rd-section 
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 190px;
+            width: 190px;
+            background-image: url(assets/PolygonCopy.png);
+            background-repeat: no-repeat;
+            
+            
+            
+        }
+        .main-header .third-section .third-div .rd-section h1,p
+        {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .main-header .third-section .third-div .rd-section h1
+        {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+        
+        .main-header .forth-section h1
+        {
+            font-size: 50px;
+        }
+        .main-header .forth-section
+        {
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            color: black;padding-top: 200px;
+        }
+        .main-header .forth-section .button
+        {
+            background-color:#FF6565;
+            width: 162px;
+            height: 44px;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            justify-content: center;
+           
+
+        }
+        
+        #main-header
+        {
+            color: white;
+            flex-direction: column;
+            
+
+
+        }
+        main .first-section .button
+        {
+            background-color:#FF6565;
+            width: 162px;
+            height: 44px;
+            border: none;
+            border-radius: 20px;
+            color: white;
+
+        }
+        main .first-section .first-para
+        {
+            display: flex;
+            flex-direction: column;
+            justify-self: flex-end;
+            align-self: center;
+        }
+ 
