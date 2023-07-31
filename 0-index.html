@@ -1,180 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>headphones</title>
+  <link rel="stylesheet" href="0-styles.css">
+</head>
+<body>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="0-styles.css" />
-        <title>Headphones</title>
-        <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
-        <style>
-            body {
-                padding: 0;
-                margin: 0;
-                font-family: 'Source Sans Pro';
-            }
+  <!--The Beginning-->
+  <section class="the-beginning">
+  <!--Start of Header-->
+  <header>
 
-            .header {
-                display: flex;
-                justify-content: space-between;
-                background-color: transparent;
-                color: white;
-                padding-top: 41px;
-                padding-left: 213px;
-                padding-right: 213px;
-                z-index: 1000;
-                position: relative;
-                align-items: baseline;
+    <div class="head-container">
 
-            }
+      <!-- Mobile Layout Nav-Menu Button -->
+      <input type="checkbox" id="menu" class="menu">
+      <label for="menu" class="menu-icon"></label>
 
-            .final-footer {
-                display: flex;
-                background-color: #071629;
-                height: 249px;
-                justify-content: space-between;
-                align-items: center;
-                padding-left: 180px;
-                padding-right: 280px;
-                flex-direction: row;
-            }
+      <!--Logo-->
+      <div class="logo">
+        <a href="#" title="#"><img src="images/logo-section/logo_headphones.png" alt="Company Logo"></a>
+      </div>
+      <!--End Of Logo-->
+      
+      <!--Nav Links-->
+      <div class="nav-links">
+        <a href="#what-we-do" class="nav-link">what we do</a>
+        <a href="#our-results" class="nav-link">our results</a>
+        <a href="#contact-us" class="nav-link">contact us</a>
+      </div>
+      <!--End Of Nav Links-->
 
-            .final-footer .Social {
-                display: flex;
-                gap: 40px;
-                height: 30px;
-                width: 30px;
+      <!-- Start Of Mobile Nav-Menu -->
+        <ul class="menu-list">
+          <li class="menu-link"><a href="#what-we-do">what we do</a></li>
+          <li class="menu-link"><a href="#our-results">our results</a></li>
+          <li class="menu-link"><a href="#contact-us">contact us</a></li>
+        </ul>
+      <!-- End Of Mobile Nav Menu -->
 
-            }
+    </div>
 
-            .nav-bar {
-                display: flex;
-                list-style: none;
-                gap: 20px;
-                text-decoration: none;
-                color: white;
-            }
+  </header>
+  <!--End of Header-->
+  
+  <!--Start of Main-->
+  <main>
 
-            .nav-bar a {
-                text-decoration: none;
-                color: white;
-            }
+    <!--Start of Main Section-->
+    <section class="main-section">
 
-            .nav-bar :hover {
-                color: #FF6565;
-            }
+      <div>
+        <h1 class="main-heading">Lorem ipsum dolor set amet lorem ipsum</h1>
+        <p class="sub-heading">Lorem ipsum dolor set amet lorem ipsum</p>
+        <a href="#"><button class="first-button">CALL TO ACTION</button></a>
+      </div>
 
-            .w-6 {
-                width: 50px;
-            }
+      <div>
+        
+        <p class="main-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
 
-            .small-screen {
-                display: none;
-            }
+      </div>
 
-            @media screen and (max-width:780px) {
-                .small-screen {
-                    display: block;
-                }
+    </section>
+    <!--End of Main Section-->
 
-                .nav-bar {
-                    display: none;
-                }
+  </section>
+  <!--End Of Beginning-->
 
-                .header {
-                    display: flex;
-                    justify-content: space-between;
-                    background-color: transparent;
-                    color: white;
-                    padding-left: 15px;
-                    align-items: baseline;
-                }
+  </main>
+  <!--End Of Main-->
+  
+  <!--Start Of Footer-->
+  <footer>
 
-                .logo {
-                    display: flex;
-                    justify-self: center;
-                }
-            }
+  </footer>
+  <!--End of Footer-->
 
-            main .first-section {
-                height: 1000px;
-                background-image: url(assets/headphones_hero_1.jpg);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                position: relative;
-                top: -110px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-            }
-
-            #main-header {
-                color: white;
-                flex-direction: column;
-            }
-
-            main .first-section .button {
-                background-color: #FF6565;
-                width: 162px;
-                height: 44px;
-                border: none;
-                border-radius: 20px;
-                color: white;
-            }
-
-            main .first-section .first-para {
-                display: flex;
-                flex-direction: column;
-                justify-self: flex-end;
-                align-self: center;
-            }
-        </style>
-    </head>
-
-    <body>
-        <header>
-            <div class="header">
-                <div class="small-screen">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
-                    </svg>
-                </div>
-                <div class="logo">
-                    <img src="assets/logo_headphones.png" alt="logo_headphones">
-                </div>
-                <nav class="nav-bar">
-                    <a href="#">What we do</a>
-                    <a href="#">our results</a>
-                    <a href="#">contact us</a>
-                </nav>
-                <!--Hamburger-->
-            </div>
-        </header>
-        <main id="main-header" class="main-header">
-            <section class="first-section">
-                <br><br><br><br><br><br><br><br>
-                <h1> Lorem ipsum dolor set amet lorem ipsum </h1>
-                <div>
-                    Lorem ipsum dolor set amet lorem ipsum dolor set
-                </div>
-                <br>
-                <br>
-                <button type="button" class="button">
-                    CALL TO ACTION
-                </button>
-                <br><br><br><br><br><br><br><br>
-                <div class="first-para">
-                    <p>Lorem ipsum dolor sit amet, consectur adipiscing elit,sed do eiusmod tempor incididunt ut</p>
-                    <p>labore et dolore magna aliqua. Ut enim ad minim veinam,quis nostrud erercitation ullamco</p>
-                    <p>laboris nisi ut aliquip ex ea comondo consequat. Duis aute irure dolor in reprehenderit in</p>
-                    <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                </div>
-            </section>
-        </main>
-    </body>
-
+</body>
 </html>

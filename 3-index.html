@@ -1,397 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>headphones</title>
+  <link rel="stylesheet" href="3-styles.css">
+</head>
+<body>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="3-styles.css" />
-        <title>Headphones</title>
-        <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
-        <style>
-            body {
-                padding: 0;
-                margin: 0;
-                font-family: 'Source Sans Pro';
-            }
+  <!--The Beginning-->
+  <section class="the-beginning">
 
-            .header {
-                display: flex;
-                justify-content: space-between;
-                background-color: transparent;
-                color: white;
-                padding-top: 41px;
-                padding-left: 213px;
-                padding-right: 213px;
-                z-index: 1000;
-                position: relative;
-                align-items: baseline;
-            }
+    <!--Start of Header-->
+    <header>
+  
+      <div class="head-container">
 
-            .final-footer {
-                display: flex;
-                background-color: #071629;
-                height: 249px;
-                justify-content: space-between;
-                align-items: center;
-                padding-left: 180px;
-                padding-right: 280px;
-                flex-direction: row;
-            }
+      <!-- Mobile Layout Nav-Menu Button -->
+      <input type="checkbox" id="menu" class="menu">
+      <label for="menu" class="menu-icon"></label>
+  
+        <!--Logo-->
+        <div class="logo">
+          <a href="#" title="#"><img src="images/logo-section/logo_headphones.png" alt="Company Logo"></a>
+        </div>
+        <!--End Of Logo-->
+        
+        <!--Nav Links-->
+        <div class="nav-links">
+          <a href="#what-we-do" class="nav-link">what we do</a>
+          <a href="#our-results" class="nav-link">our results</a>
+          <a href="#contact-us" class="nav-link">contact us</a>
+        </div>
+        <!--End Of Nav Links-->
 
-            .final-footer .Social {
-                display: flex;
-                gap: 40px;
-                height: 30px;
-                width: 30px;
-            }
-
-
-            .nav-bar {
-                display: flex;
-                list-style: none;
-                gap: 20px;
-                text-decoration: none;
-                color: white;
-            }
-
-            .nav-bar a {
-                text-decoration: none;
-                color: white;
-            }
-
-            .nav-bar :hover {
-                color: #FF6565;
-            }
-
-            .w-6 {
-                width: 50px;
-            }
-
-            .small-screen {
-                display: none;
-            }
-
-            @media screen and (max-width:780px) {
-                .small-screen {
-                    display: block;
-                }
-
-                .nav-bar {
-                    display: none;
-                }
-
-                .header {
-                    display: flex;
-                    justify-content: space-between;
-                    background-color: transparent;
-                    color: white;
-                    padding-left: 15px;
-                    align-items: baseline;
-                }
-
-                .logo {
-                    display: flex;
-                    justify-self: center;
-                }
-
-                .main-header .second-section .second-div {
-                    display: flex;
-                    flex-direction: column;
-                    flex-flow: column;
-                    justify-content: space-between;
-                    align-items: center;
-                    gap: 50px;
-                    height: auto;
-                }
-
-                .main-header .third-section .third-div {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-
-                }
-            }
-
-            main .first-section {
-                height: 1000px;
-                background-image: url(assets/headphones_hero_1.jpg);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                position: relative;
-                top: -110px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-            }
-
-            main .second-section {
-                height: 800px;
-                display: flex;
-                color: black;
-                justify-content: flex-start;
-                position: relative;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            main .second-section .second-div .sec-section {
-                display: flex;
-                flex-direction: column;
-            }
-
-            main .second-section .second-div {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                gap: 100px;
-            }
-
-            main .second-section .second-div img,
-            h3,
-            p {
-                display: flex;
-                justify-content: center;
-            }
-
-            main .second-section .second-div img {
-                display: flex;
-                width: 80px;
-                height: 65px;
-                justify-content: center;
-                padding-left: 50px;
-            }
-
-            main .second-section h1,
-            p {
-                display: flex;
-                justify-content: center;
-            }
-
-            main .third-section {
-                height: 800px;
-                background-image: url(assets/headphones_hero_2.jpg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                display: flex;
-                color: white;
-                position: relative;
-                justify-content: center;
-            }
-
-            .main-header .third-section h1,
-            p {
-                display: flex;
-                justify-content: center;
-            }
-
-            .main-header .third-section {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .main-header .third-section .third-div {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-            }
-
-            .main-header .third-section .third-div .rd-section {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                height: 190px;
-                width: 190px;
-                background-image: url(assets/PolygonCopy.png);
-                background-repeat: no-repeat;
-            }
-
-            .main-header .third-section .third-div .rd-section h1,
-            p {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .main-header .third-section .third-div .rd-section h1 {
-                font-size: 45px;
-                margin-bottom: 10px;
-            }
-
-            .main-header .forth-section h1 {
-                font-size: 50px;
-            }
-
-            .main-header .forth-section {
-                height: 800px;
-                display: flex;
-                justify-content: center;
-                align-content: center;
-                color: black;
-                padding-top: 200px;
-            }
-
-            .main-header .forth-section .button {
-                background-color: #FF6565;
-                width: 162px;
-                height: 44px;
-                border: none;
-                border-radius: 20px;
-                color: white;
-                justify-content: center;
-            }
-
-            #main-header {
-                color: white;
-                flex-direction: column;
-            }
-
-            main .first-section .button {
-                background-color: #FF6565;
-                width: 162px;
-                height: 44px;
-                border: none;
-                border-radius: 20px;
-                color: white;
-            }
-
-            main .first-section .first-para {
-                display: flex;
-                flex-direction: column;
-                justify-self: flex-end;
-                align-self: center;
-            }
-        </style>
-    </head>
-
-    <body>
-        <header>
-            <div class="header">
-                <div class="small-screen">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
-                    </svg>
-                </div>
-                <div class="logo">
-                    <img src="assets/logo_headphones.png" alt="logo_headphones">
-                </div>
-                <nav class="nav-bar">
-                    <a href="#">What we do</a>
-                    <a href="#">our results</a>
-                    <a href="#">contact us</a>
-                </nav>
-                <!--Hamburger-->
+        <!-- Mobile Nav Menu -->
+          <ul class="menu-list">
+            <li class="menu-link"><a href="#what-we-do">what we do</a></li>
+            <li class="menu-link"><a href="#our-results">our results</a></li>
+            <li class="menu-link"><a href="#contact-us">contact us</a></li>
+          </ul>
+        <!-- End Mobile-Nav Menu -->
+  
+      </div>
+  
+    </header>
+    <!--End of Header-->
+    
+    <!--Start of Main-->
+    <main>
+  
+      <!--Start of Main Section-->
+      <section class="main-section">
+  
+        <div class="main-section-div">
+          <h1 class="main-heading">Lorem ipsum dolor set amet lorem ipsum</h1>
+          <p class="sub-heading">Lorem ipsum dolor set amet lorem ipsum</p>
+          <a href="#"><button class="first-button">CALL TO ACTION</button></a>
+        </div>
+  
+        <div>
+          
+          <p class="main-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+  
+        </div>
+  
+      </section>
+      <!--End of Main Section-->
+  
+    </section>
+    <!--End Of Beginning-->
+  
+      <!--Section Two-->
+      <section class="section-2" id="what-we-do">
+  
+        <div class="what-we-do">
+          <h2>What we do...</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+  
+        <!--Headphones Features-->
+        <div class="features">
+          
+          <div>
+            <img src="images/section-2/sound-frecuency.png" alt="Sound Frequency" class="feature-images">
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+          </div>
+          
+          <div>
+            <img src="images/section-2/video-icon.png" alt="Video Icon" class="feature-images">
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+          </div>
+          
+          <div>
+            <img src="images/section-2/music-icon.png" alt="Music Icon" class="feature-images">
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+          </div>
+          
+          <div>
+            <img src="images/section-2/hearing-icon.png" alt="Hearing Icon" class="feature-images">
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+          </div>
+          <!--End of Headphones Features-->
+  
+        </div>
+  
+      </section>
+      <!--End Of Section Two-->
+  
+      <!--Start of Section Three-->
+      <section class="section-3" id="our-results">
+        
+        <div class="main-3-div">
+          
+          <div class="our-results">
+            <h2>Our results speak for themselves</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+  
+          <div class="hexagons">
+            <div class="hexagon">
+              <a href="#"><img src="images/section-3/hexagon.png" alt="Hexagon"></a>
             </div>
-        </header>
-        <main id="main-header" class="main-header">
-            <section class="first-section">
-                <br><br><br><br><br><br><br><br>
-                <h1> Lorem ipsum dolor set amet lorem ipsum </h1>
-                <div>
-                    Lorem ipsum dolor set amet lorem ipsum dolor set
-                </div>
-                <br>
-                <br>
-                <button type="button" class="button">
-                    CALL TO ACTION
-                </button>
-                <br><br><br><br><br><br><br><br>
-                <div class="first-para">
-                    <p>Lorem ipsum dolor sit amet, consectur adipiscing elit,sed do eiusmod tempor incididunt ut</p>
-                    <p>labore et dolore magna aliqua. Ut enim ad minim veinam,quis nostrud erercitation ullamco</p>
-                    <p>laboris nisi ut aliquip ex ea comondo consequat. Duis aute irure dolor in reprehenderit in</p>
-                    <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                </div>
-            </section>
-            <section class="second-section">
-                <div>
-                    <h1> What we do..</h1>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet, consectur adipiscing elit,sed do eiusmod tempor incididunt ut</p>
-                    <p>labore et dolore magna aliqua. Ut enim ad minim veinam,quis nostrud erercitation ullamco</p>
-                    <p>laboris nisi ut aliquip ex ea comondo consequat. Duis aute irure dolor in reprehenderit in</p>
-                    <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-                <div class="second-div">
-                    <section class="sec-section">
-                        <img src="assets/sound-frecuency.png" alt="img1">
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet,</p>
-                        <p>consectur adipiscing elit.</p>
-                    </section>
-                    <section class="sec-section">
-                        <img src="assets/video.png" alt="img1">
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet,</p>
-                        <p>consectur adipiscing elit.</p>
-                    </section>
-                    <section class="sec-section">
-                        <img src="assets/music.png" alt="img1">
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet,</p>
-                        <p>consectur adipiscing elit.</p>
-                    </section>
-                    <section class="sec-section">
-                        <img src="assets/hearing.png" alt="img1">
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet,</p>
-                        <p>consectur adipiscing elit.</p>
-                    </section>
-                </div>
-            </section>
-            <section class="third-section">
-                <div>
-                    <h1>Our results speak for themselves</h1>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet, consectur adipiscing elit,sed do eiusmod tempor incididunt ut</p>
-                    <p>labore et dolore magna aliqua. Ut enim ad minim veinam,quis nostrud erercitation ullamco</p>
-                    <p>laboris nisi ut aliquip ex ea comondo consequat. Duis aute irure dolor in reprehenderit in</p>
-                    <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <br> <br> <br>
-                </div>
-                <div class="third-div">
-                    <div class="rd-section">
-                        <h1>+2%</h1>
-                        <p>Lorem ipsum dolor</p>
-                    </div>
-                    <div class="rd-section">
-                        <h1>+2%</h1>
-                        <p>Lorem ipsum dolor</p>
-                    </div>
-                    <div class="rd-section">
-                        <h1>+2%</h1>
-                        <p>Lorem ipsum dolor</p>
-                    </div>
-                    <div class="rd-section">
-                        <h1>+2%</h1>
-                        <p>Lorem ipsum dolor</p>
-                    </div>
-                </div>
+            
+            <div class="hexagon">
+              <a href="#"><img src="images/section-3/hexagon.png" alt="Hexagon"></a>
+            </div>
+            
+            <div class="hexagon">
+              <a href="#"><img src="images/section-3/hexagon.png" alt="Hexagon"></a>
+            </div>
+            
+            <div class="hexagon">
+              <a href="#"><img src="images/section-3/hexagon.png" alt="Hexagon"></a>
+            </div>
+          </div>
+  
+        </div>
+  
+      </section>
+      <!--End of Section Three-->
 
-            </section>
-            <section class="forth-section">
-                <div>
-                    <h1>Contact us</h1>
-                    <br><br><br><br><br><br>
-                    <p>Name</p>
-                    <br><br>
-                    <p>Email</p>
-                    <br><br>
-                    <p>Your messege</p>
-                    <br><br><br><br><br>
-                    <Button type="button" class="button">
-                        CALL TO ACTION
-                    </Button>
-                </div>
-            </section>
-        </main>
-    </body>
+    <!--Start Of Contact Section-->
 
+    <section class="contact-us" id="contact-us">
+
+      <h2>Contact us</h2>
+
+      <div class="contact-input">
+
+        <div id="name-input">
+          <input type="text" placeholder="Name" class="fill-in">
+        </div>
+        <div id="email-input">
+          <input type="text" placeholder="Email" class="fill-in">
+        </div>
+        <div id="message-input">
+          <input type="text" placeholder="Your Message" class="fill-in">
+        </div>
+      
+      </div>
+
+      <a href="#"><button class="contact-us-button">CALL TO ACTION</button></a>
+
+    </section>
+
+    <!--End of Contact Section-->
+    
+  </main>
+  <!--End Of Main-->
+  
+  <!--Start Of Footer-->
+  <footer>
+
+  </footer>
+  <!--End of Footer-->
+
+</body>
 </html>
